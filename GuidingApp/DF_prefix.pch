@@ -1,0 +1,42 @@
+//
+//  DF_prefix.pch
+//  GuidingApp
+//
+//  Created by 何定飞 on 15/10/16.
+//  Copyright © 2015年 Hdu. All rights reserved.
+//
+
+#ifndef DF_prefix_pch
+#define DF_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#import "AppDelegate.h"
+
+//公共类
+#import "DFTools.h"
+#import "DFConstant.h"
+#import "DFBaseViewController.h"
+
+//分类
+#import "UIImage+extend.h"
+#import "NSString+Addtions.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+//第三方
+#import "MBProgressHUD.h"
+#import "DFLoadingView.h"
+
+
+//model
+#import "UserInfo.h"
+#import "PlaceInfo.h"
+
+
+#import "LoginViewController.h"
+
+
+#endif /* DF_prefix_pch */

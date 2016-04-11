@@ -1,0 +1,60 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMapLocation (1.2.2)
+  - AMapNavi (1.5.0)
+  - AMapSearch (3.3.0)
+  - FMDB/SQLCipher (2.6.2):
+    - SQLCipher
+  - HMSegmentedControl (1.5.2)
+  - LBBlurredImage (0.2.2)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SQLCipher (3.1.0):
+    - SQLCipher/standard (= 3.1.0)
+  - SQLCipher/common (3.1.0)
+  - SQLCipher/standard (3.1.0):
+    - SQLCipher/common
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - AMapLocation
+  - AMapNavi
+  - AMapSearch
+  - FMDB/SQLCipher
+  - HMSegmentedControl
+  - LBBlurredImage
+  - SDWebImage (~> 3.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AMapLocation: 5412fbf0385716d4d481e39a95929057cddc093f
+  AMapNavi: 605e2dc3bad11fb2649ba4df61b82ab0da389d3f
+  AMapSearch: cff4faf59c007f7d1f2bae2d7170c3912783981a
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  LBBlurredImage: 700634c17922bc2d22343118e7deb6a3ca12db43
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
+
+COCOAPODS: 0.39.0

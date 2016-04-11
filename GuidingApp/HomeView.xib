@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView">
+            <connections>
+                <outlet property="ShowMapSettingBtn" destination="VD1-3c-xdc" id="yyS-qO-1LH"/>
+                <outlet property="friendTableView" destination="2x2-Ud-LBQ" id="eQL-Hc-sqG"/>
+                <outlet property="friendView" destination="Pc9-db-Ih9" id="DtH-jq-bgJ"/>
+                <outlet property="itemBtn1" destination="QLh-vN-srh" id="Ng2-lo-SPc"/>
+                <outlet property="itemBtn2" destination="Dea-Us-eZh" id="qtr-ew-sfA"/>
+                <outlet property="itemBtn3" destination="dLe-0N-k3n" id="pqQ-qr-Nt8"/>
+                <outlet property="itemBtn4" destination="RxI-LW-3Dy" id="Z9b-AP-Oww"/>
+                <outlet property="mapChoiceView" destination="olz-4X-wk2" id="ZlS-Yk-9aT"/>
+                <outlet property="mapName" destination="aoy-MX-22F" id="moX-n4-2hi"/>
+                <outlet property="mapPickerView" destination="AMf-Lx-fLl" id="ldo-4a-Wea"/>
+                <outlet property="mapShowView" destination="gmu-lA-XLK" id="JuT-i4-jST"/>
+                <outlet property="mapTypeControl" destination="CbF-Hv-PN5" id="Kyf-b6-pNE"/>
+                <outlet property="mapView" destination="a2o-Hw-pCw" id="3MR-1q-aFE"/>
+                <outlet property="menuBtn" destination="OVI-9u-Qyj" id="33F-yf-Mwf"/>
+                <outlet property="menuItemView" destination="OBW-yx-y7U" id="lhz-Y2-O4B"/>
+                <outlet property="moreBtn" destination="IRk-1m-F51" id="7Nh-KN-sd5"/>
+                <outlet property="placePickerView" destination="rHc-FC-9y8" id="Uff-Dv-WX9"/>
+                <outlet property="roadControl" destination="059-Io-TO9" id="0ft-xs-f7u"/>
+                <outlet property="showCompassBtn" destination="7eB-Sx-nln" id="cah-0e-O53"/>
+                <outlet property="showLabelBtn" destination="P92-pz-Ach" id="VsS-fu-UNy"/>
+                <outlet property="showMeBtn" destination="muW-u2-kSU" id="A0O-D2-t9Q"/>
+                <outlet property="showScaleBtn" destination="gYm-9N-6gd" id="a5j-bl-z07"/>
+                <outlet property="showTrafficeBtn" destination="gmT-wO-FdC" id="ui6-K6-rFn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2o-Hw-pCw" userLabel="mapView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gLT-ah-C0y">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <animations/>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.80000000000000027" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBW-yx-y7U" userLabel="菜单项">
+                    <rect key="frame" x="65" y="515" width="225" height="225"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwl-Cj-U3y" userLabel="item1">
+                            <rect key="frame" x="5" y="85" width="50" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxI-LW-3Dy" userLabel="item1">
+                                    <rect key="frame" x="10" y="0.0" width="35" height="35"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                    <state key="normal" title="Button" image="item1.png"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="推荐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4v-Rd-h9F">
+                                    <rect key="frame" x="10" y="38" width="35" height="12"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXU-d7-fac">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="itemClick:" destination="-1" eventType="touchUpInside" id="1SW-ea-786"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1m4-ce-u90" userLabel="item4">
+                            <rect key="frame" x="165" y="85" width="50" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLh-vN-srh" userLabel="item4">
+                                    <rect key="frame" x="10" y="0.0" width="35" height="35"/>
+                                    <animations/>
+                                    <inset key="imageEdgeInsets" minX="7" minY="2" maxX="7" maxY="3"/>
+                                    <state key="normal" title="Button" image="item4.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlc-cU-dy2" userLabel="我的">
+                                    <rect key="frame" x="10" y="38" width="35" height="12"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1m-2k-Acp">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <animations/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="item4Click:" destination="-1" eventType="touchUpInside" id="isg-IW-Ibo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYw-74-wWe" userLabel="item3">
+                            <rect key="frame" x="120" y="28" width="50" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dea-Us-eZh" userLabel="item3">
+                                    <rect key="frame" x="10" y="0.0" width="35" height="35"/>
+                                    <animations/>
+                                    <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                    <state key="normal" title="Button" image="item3.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="朋友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wb-Wu-2t7">
+                                    <rect key="frame" x="10" y="38" width="35" height="12"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYm-NY-6qc">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <animations/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="item3Click:" destination="-1" eventType="touchUpInside" id="qm7-4t-0zZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFb-cG-NtW" userLabel="item2">
+                            <rect key="frame" x="50" y="28" width="50" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLe-0N-k3n" userLabel="item2">
+                                    <rect key="frame" x="10" y="0.0" width="35" height="35"/>
+                                    <animations/>
+                                    <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                    <state key="normal" title="Button" image="item2.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="收藏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABg-Om-IYt">
+                                    <rect key="frame" x="10" y="38" width="35" height="12"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug4-dK-PEz">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <animations/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="item2Click:" destination="-1" eventType="touchUpInside" id="wSJ-9M-oKS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VD1-3c-xdc">
+                    <rect key="frame" x="13" y="619" width="44" height="44"/>
+                    <animations/>
+                    <state key="normal" image="dizhi.png"/>
+                    <state key="selected" image="downClose.png"/>
+                    <connections>
+                        <action selector="clickMeBtn:" destination="-1" eventType="touchUpInside" id="8ui-4H-LOz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVI-9u-Qyj">
+                    <rect key="frame" x="327" y="619" width="40" height="40"/>
+                    <animations/>
+                    <state key="normal" image="add2.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.44705882349999998" green="0.46666666670000001" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="menuBtnClick:" destination="-1" eventType="touchUpInside" id="IFI-Vy-SXf"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmu-lA-XLK">
+                    <rect key="frame" x="13" y="377" width="44" height="250"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmT-wO-FdC" userLabel="showTrafficeBtn">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <animations/>
+                            <state key="normal" image="lovefull.png"/>
+                            <state key="selected" image="loveempty.png"/>
+                            <connections>
+                                <action selector="mapShowBtnClick:" destination="-1" eventType="touchUpInside" id="FQf-Jf-ORK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P92-pz-Ach" userLabel="showLabelBtn">
+                            <rect key="frame" x="0.0" y="50" width="44" height="44"/>
+                            <animations/>
+                            <state key="normal" image="lovefull.png"/>
+                            <state key="selected" image="loveempty.png"/>
+                            <connections>
+                                <action selector="mapShowBtnClick:" destination="-1" eventType="touchUpInside" id="Ze2-rT-7q4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYm-9N-6gd" userLabel="showScaleBtn">
+                            <rect key="frame" x="0.0" y="100" width="44" height="44"/>
+                            <animations/>
+                            <state key="normal" image="lovefull.png"/>
+                            <state key="selected" image="loveempty.png"/>
+                            <connections>
+                                <action selector="mapShowBtnClick:" destination="-1" eventType="touchUpInside" id="fuK-xW-bcg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eB-Sx-nln" userLabel="showCompassBtn">
+                            <rect key="frame" x="0.0" y="150" width="44" height="44"/>
+                            <animations/>
+                            <state key="normal" image="lovefull.png"/>
+                            <state key="selected" image="lovefull.png"/>
+                            <connections>
+                                <action selector="mapShowBtnClick:" destination="-1" eventType="touchUpInside" id="ocu-TI-hvI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muW-u2-kSU" userLabel="showMeBtn">
+                            <rect key="frame" x="0.0" y="200" width="44" height="44"/>
+                            <animations/>
+                            <state key="normal" image="mine.png"/>
+                            <state key="selected" image="loveempty.png"/>
+                            <connections>
+                                <action selector="mapShowBtnClick:" destination="-1" eventType="touchUpInside" id="HKw-2M-kAy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <gestureRecognizers/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="119.5" y="326.5"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IRk-1m-F51">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <animations/>
+            <state key="normal" title="点击加载更多">
+                <color key="titleColor" red="0.10980392160000001" green="0.70980392160000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <point key="canvasLocation" x="468.5" y="512"/>
+        </button>
+        <view contentMode="scaleToFill" id="olz-4X-wk2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="地图：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlf-iS-5KE">
+                    <rect key="frame" x="32" y="19" width="50" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.39215686274509803" green="0.30196078431372547" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="导航：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCU-4x-iK2">
+                    <rect key="frame" x="32" y="172" width="50" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lGq-8y-Cwx">
+                    <rect key="frame" x="111" y="169" width="117" height="29"/>
+                    <animations/>
+                    <segments>
+                        <segment title="关闭"/>
+                        <segment title="开启"/>
+                    </segments>
+                    <color key="tintColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="navSwitch:" destination="-1" eventType="valueChanged" id="dUM-wL-VqT"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="路线：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65f-Ei-RFe">
+                    <rect key="frame" x="32" y="121" width="50" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="059-Io-TO9">
+                    <rect key="frame" x="111" y="118" width="117" height="29"/>
+                    <animations/>
+                    <segments>
+                        <segment title="关闭"/>
+                        <segment title="推荐路线"/>
+                    </segments>
+                    <color key="tintColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="roadSwitch:" destination="-1" eventType="valueChanged" id="o5G-0w-DmG"/>
+                    </connections>
+                </segmentedControl>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="无地图" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoy-MX-22F">
+                    <rect key="frame" x="111" y="67" width="211" height="30"/>
+                    <animations/>
+                    <color key="textColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0N-Yj-obr">
+                    <rect key="frame" x="111" y="67" width="211" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="mapChoiceBtnClick:" destination="-1" eventType="touchUpInside" id="QpG-n0-rnD"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CbF-Hv-PN5">
+                    <rect key="frame" x="111" y="19" width="217" height="29"/>
+                    <animations/>
+                    <segments>
+                        <segment title="关闭"/>
+                        <segment title="2D"/>
+                        <segment title="3D"/>
+                        <segment title="卫星"/>
+                    </segments>
+                    <color key="tintColor" red="0.3921568627" green="0.30196078430000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="mapSwitch:" destination="-1" eventType="valueChanged" id="vbn-Ib-uo6"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="565.5" y="180"/>
+        </view>
+        <pickerView contentMode="scaleToFill" id="AMf-Lx-fLl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <animations/>
+            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="dYE-26-Gzn"/>
+                <outlet property="delegate" destination="-1" id="Rb6-gB-rDL"/>
+            </connections>
+            <point key="canvasLocation" x="119.5" y="835.5"/>
+        </pickerView>
+        <pickerView contentMode="scaleToFill" id="rHc-FC-9y8">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <animations/>
+            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="X7s-1T-gEM"/>
+                <outlet property="delegate" destination="-1" id="9hb-Np-wbn"/>
+            </connections>
+            <point key="canvasLocation" x="584.5" y="801.5"/>
+        </pickerView>
+        <view contentMode="scaleToFill" id="Pc9-db-Ih9">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="603"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-Ud-LBQ">
+                    <rect key="frame" x="0.0" y="0.0" width="180" height="603"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZnZ-rR-Y1S"/>
+                        <outlet property="delegate" destination="-1" id="2WE-vs-md3"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1011" y="335.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add2.png" width="44" height="44"/>
+        <image name="bg.png" width="750" height="1334"/>
+        <image name="dizhi.png" width="22" height="22"/>
+        <image name="downClose.png" width="22" height="22"/>
+        <image name="item1.png" width="65" height="63"/>
+        <image name="item2.png" width="65" height="63"/>
+        <image name="item3.png" width="64" height="64"/>
+        <image name="item4.png" width="46" height="62"/>
+        <image name="loveempty.png" width="22" height="22"/>
+        <image name="lovefull.png" width="22" height="22"/>
+        <image name="mine.png" width="22" height="22"/>
+    </resources>
+</document>
